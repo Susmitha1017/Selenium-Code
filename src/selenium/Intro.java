@@ -22,10 +22,11 @@ public class Intro {
 		    driver.findElement(By.name("login")).click();
 		    
 
-	Thread.sleep(3000); 
+	         Thread.sleep(3000); 
 
 		    driver.findElement(By.xpath("(//*[name()='image'])[1]")).click();
-			driver.findElement(By.xpath("//span[normalize-space()='Log Out']")).click();
+		    Thread.sleep(3000);
+			driver.findElement(By.xpath("(//span[normalize-space()='Log Out'])[1]")).click();
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
